@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Paises! 🌎</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom-select.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <h1>Donde estas en el mundo🌎?</h1>
+            <button class="btn-dark-mode">
+                <i class="far fa-moon"></i>
+                Modo oscuro..
+            </button>
+        </div>
+    </nav>
+
+    <div class="container power">Power By <a href="https://www.facebook.com/SoriaDev" target="_blank">Soria-Developer 😎</a></div>
+    <header class="container filter-content my-2">
+        <form class="form-search" id="formulario">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Ingresa Pais" id="inputFormulario">
+        </form>
+        <div class="custom-select" style="width: 200px;">
+            <select>
+                <option value="">Filtrar por Region</option>
+                <option value="">Todos</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europa</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container grid" id="banderas"></main>
+
+    <script src="/js/dark-mode.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/custom-select.js"></script>
+    <script src="/js/formulario.js"></script>
+    
+    
+</body>
+</html>
